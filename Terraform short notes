@@ -1,0 +1,30 @@
+Terraform - infrastructure as a code
+^Terraform is used instead of using aws console or any console with UI
+^In short Terraform=behind the scenes of aws console
+^includes  the creation and integration of aws services like EC2, S3 bucket,VPC etc
+^Hashi corp language
+Practicing steps-----
+^Launch instance > connect 
+^Install AWS CLI first (based on os, eg Linux copy the cmd and paste)
+^Goto > IAM>users>security credentials >(CLI) access keys
+^goto> your server > "aws configure" > paste access key > enter > "password" > region and format "json"also check and mention
+>Install terraform
+	^in terraform website > Linux > copy run each 3 cmd
+^Open vscode to write .tf > just to write code in formatted way 
+^in your server >create folder/file > eg vi main.tf ( copy paste all cmds inside this)
+
+Basic commonds ( run all in the same directory of .tf file)
+	^Terraform init
+	^Terraform validate
+	^Terraform plan
+	^Terraform apply
+	^Terraform destroy
+^to list and get the uploaded files of s3 bucket
+		^in cli " aws s3 cp "copied s3 uri" "." 
+                ^ here aws s3-service, cp-cmd, s3 uri- souce, .-destination
+^ do vice-versa to upload fils to s3 bucket from cli
+To create S3 bucket and EC2 , vpc .tf file example file stored in my repo under terraform_notes
+
+
+
+
